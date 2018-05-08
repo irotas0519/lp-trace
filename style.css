@@ -3,6 +3,7 @@
 /* 基本色 */
 :root {
     --bg-color: #f9fafb;
+    --bg-blue-color: #f2f4f6;
 }
 
 /* 基本設定: ページ全体 */
@@ -13,10 +14,12 @@ body {
     /* font-family: 'Ubuntu Condensed', sans-serif; */
     margin: 0;
     letter-spacing: 0.075px;
+    min-width: 320px;
 }
 
 * {
     box-sizing: border-box;
+    text-decoration: none;
 }
 .conA {
     display: flex;
@@ -31,8 +34,28 @@ body {
     position: relative;
     width: 100%;
     box-sizing: border-box;
-
+    letter-spacing: 0.075em;
+    font-weight: bold;
     
+}
+
+.conA .container .anime {
+    display: inline-block;
+    animation-name: bottom-to-up, fade-in;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+}
+
+.conA .container .durB {
+    animation-delay: 0.04s;
+}
+
+.conA .container .durC {
+    animation-delay: 0.06s;
+}
+
+.conA .container .durD {
+    animation-delay: 0.02s;
 }
 
 .conA h1 {
@@ -48,6 +71,27 @@ body {
     letter-spacing: 0;
     /* margin-bottom: 30px; */
     color: #FFF;
+    margin-bottom: 39px;
+}
+
+@keyframes bottom-to-up {
+    0% {
+        transform: translateY(50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .conA .banner {
@@ -67,7 +111,7 @@ body {
 
 @media (max-width: 1024px) {
     .conA {
-        padding: 150px 25px 160px;
+        padding: 20px 25px 160px;
     }
 
     .conA h1 {
@@ -78,13 +122,24 @@ body {
 
 .conA .blackbar {
     position: absolute;
+    background-color: rgba(0, 0, 0, .7);
+    /* overflow-x: scroll; */
+    /* overflow-y: hidden; */
+    
     width: 100%;
     height: 20%;
     bottom: 0;
-    background-color: rgba(0, 0, 0, .7);
-    overflow-x: scroll;
-    overflow-y: hidden;
+}
+.conA .to-left {
+    position: absolute;
+    /* right: 0; */
+    
     display: flex;
+    
+    animation-iteration-count: infinite;
+    animation-name: to-left;
+    animation-timing-function: linear;
+    animation-duration: 40s;
 }
 .conA .baritems {
     text-align: left;
@@ -92,6 +147,16 @@ body {
     margin-right: 30px;
     flex-shrink: 0;
     flex-grow: 0;
+}
+
+@keyframes to-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-78.5%);
+    }
 }
 .conA .bartext {
     font-weight: bold;
@@ -131,8 +196,8 @@ body {
 
 /* セクション コンテンツB */
 .conB {
-    background-color: #f9fafb;
-    background-color: var(--bg-color);
+    background-color: #f2f4f6;
+    background-color: var(--bg-blue-color);
 }
 .conB .section-num {
     padding: 20px 70px;
@@ -214,6 +279,330 @@ body {
 @media screen and (max-width: 1024px) {
     .conB h2 {
         margin-bottom: 20px;
-        font-size: 18px;
+        font-size: 24px;
     }
+}
+
+/* セクションC コンテンツC */
+
+.conC {
+    background-color: #FFF;
+    padding: 20px 25px 30px;
+}
+.conC .section-num {
+    padding: 20px 70px;
+    text-align: center;
+}
+.conC .section-num span {
+        position: relative;
+        background: -webkit-linear-gradient(340deg, #389de8, #9289e7);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+        font-size: 20px;
+}
+
+.conC span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 34px;
+    height: 5px;
+    border-radius: 20px;
+    background: -webkit-linear-gradient(340deg, #389de8, #9289e7);
+}
+
+@media screen and (max-width: 1024px) {
+    .section-num span::before {
+        width: 24px;
+    }
+}
+
+.conC .service-text {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.conC h2 {
+    
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.conC p {
+    color: #9f9fa0;
+    line-height: 1.6;
+    letter-spacing: 0;
+    font-size: 14px;
+    margin-bottom: 45px;
+}
+
+@media screen and (max-width: 1024px) {
+    .service-txt h1 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .conC h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+}
+
+.conC a {
+    display: inline-block;
+    padding: 25px;
+    width: 100%;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(-45deg,#9090FF,#36B8FF);
+    box-shadow: 0 8px 15px rgba(123,138,147,.15);
+    transition: box-shadow .45s ease-in-out 0s;
+    -webkit-transition: box-shadow .45s ease-in-out 0s;
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .conC a {
+        width: 360px;
+    }
+}
+
+.bgimg {
+    margin-top: 45px;
+    background-image: url(img/conC-img.png);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+    .bgimg {
+        position: relative;
+        width: 100%;
+        height: 200px;
+    }
+}
+
+/* セクションD コンテンツD */
+
+.conD {
+    background-color: #f2f4f6;
+    background-color: var(--bg-blue-color);
+    padding-top: 70px;
+}
+.conD .section-num {
+    padding: 20px 70px;
+    text-align: center;
+}
+.conD .section-num span {
+        position: relative;
+        background: -webkit-linear-gradient(340deg, #389de8, #9289e7);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+        font-size: 20px;
+}
+
+.conD span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 34px;
+    height: 5px;
+    border-radius: 20px;
+    background: -webkit-linear-gradient(340deg, #389de8, #9289e7);
+}
+
+@media screen and (max-width: 1024px) {
+    .section-num span::before {
+        width: 24px;
+    }
+}
+
+.conD .service-text {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.conD .list-items {
+    text-align: center;
+    display: flex;
+    margin: auto;
+    width: 100%;
+    max-width: 900px;
+}
+.conD .flex {
+    display: flex;
+    justify-content: center;
+}
+
+.conD .list-items ul {
+    list-style: none;
+    margin: 0;
+    padding: 60px 25px 40px;
+}
+
+.conD .list-items li {
+    margin-bottom: 60px;
+    background-color: white;
+    padding: 20px 25px 40px;
+}
+
+.conD .list-items .border {
+    border: solid 2px skyblue;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+
+.conD .tyousei {
+    margin-top: -2px;
+}
+
+.conD h2 {
+    
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.conD p {
+    color: #9f9fa0;
+    line-height: 1.6;
+    letter-spacing: 0;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1024px) {
+    .service-txt h1 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .conD h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+}
+
+/* セクションE コンテンツE */
+
+.conE {
+    background-color: #f2f4f6;
+    background-color: var(--bg-blue-color);
+}
+
+.conE .imgimgimg {
+    text-align: center;
+}
+
+.conE .banner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.conE .banner a {
+    display: inline-block;
+    width: 49%;
+}
+
+.conE .banner img {
+    width: 100%;
+}
+
+.conE .app-icon {
+    width: 270px;
+}
+
+.conE .app-img {
+    display: block;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .app-img {
+        margin: -20px 0 -60px;
+    }
+}
+
+/* ヘッダー */
+.header {
+    background-color: #FFF;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    z-index: 10;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 25px 12px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header .header-links>* {
+    margin: 0 10px;
+}
+
+
+@media screen and (max-width: 764px) {
+    .header-links {
+        display: none;
+    }
+}
+
+@media not screen and (max-width: 764px) {
+    .menu {
+        display: none;
+    }
+}
+
+.header .menu {
+    font-size: 24px;
+}
+
+
+.header img {
+    height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .header img {
+        height: 32px;
+    }
+}
+/* フッター */
+
+.footer {
+    color: #9f9fa0;
+    background-color: #333;
+    text-align: center;
+    padding: 35px 0 135px;
+    position: relative;
 }
