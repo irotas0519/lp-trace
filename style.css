@@ -74,7 +74,6 @@ body {
 .conA p {
     font-size: 14px;
     font-weight: 700;
-    letter-spacing: 0;
     /* margin-bottom: 30px; */
     color: #FFF;
     margin-bottom: 39px;
@@ -243,23 +242,21 @@ body {
 }
 
 .conB .service-text p {
-    width: 490px;
     margin: auto;
 }
 
 .conB .list-items {
     text-align: center;
-    display: flex;
-    justify-content: center;
     margin: auto;
-    width: 100%;
     max-width: 900px;
 }
 
 .conB .list-items ul {
     list-style: none;
     margin: 0;
-    padding: 60px 0 10px;
+    padding: 76px 0 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .conB .list-items li {
@@ -267,12 +264,12 @@ body {
     background-color: white;
     padding: 20px 25px 40px;
     position: relative;
-    width: 490px;
     border: 1px solid rgb(239, 240, 241);
 }
 
 .conB h1 {
     margin: 0;
+    margin-bottom: 12px;
     text-align: center;
     font-size: 36px;
 }
@@ -332,6 +329,17 @@ body {
 
     .conB .list-items li {
         margin: 0 0 65px;
+        max-width: 490px;
+    }
+
+    .conB .list-items ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 25px;
+    }
+
+    .conB p {
+        max-width: 490px;
     }
 }
 
@@ -349,6 +357,11 @@ body {
 
     .conB .section-num span {
         font-size: 30px;
+    }
+
+    .conB .list-items li {
+        width: 100%;
+
     }
 }
 
@@ -370,6 +383,7 @@ body {
     padding-top: 108px;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 .conC .section-num span {
         display: block;
@@ -410,13 +424,11 @@ body {
     font-size: 14px;
     margin-top: 4px;
     margin-bottom: 45px;
-    width: 490px;
 }
 
 .conC a {
     display: block;
     padding: 25px;
-    width: 490px;
     border-radius: 4px;
     text-align: center;
     font-size: 14px;
@@ -426,6 +438,7 @@ body {
     box-shadow: 0 8px 15px rgba(123,138,147,.15);
     transition: box-shadow .45s ease-in-out 0s;
     -webkit-transition: box-shadow .45s ease-in-out 0s;
+    width: 100%;
 }
 
 
@@ -438,13 +451,14 @@ body {
 
 
 @media not screen and (max-width: 1024px) {
-    .conC a {
+    /* .conC a {
         width: 360px;
-    }
+    } */
 
     .conC .conC-bgset {
         align-items: flex-start;
         padding-right: 100px;
+        width: 50%;
     }
 
     .conC .service-text {
@@ -457,7 +471,6 @@ body {
 
     .conC .service-text p {
         text-align: left;
-        width: 350px;
     }
 
     .conC .section-num span {
@@ -491,10 +504,15 @@ body {
     .conC .conC-bgset {
         padding-top: 50px;
         padding-bottom: 70px;
+        max-width: 490px;
     }
 
     .section-num span::before {
         width: 24px;
+    }
+
+    .conC .conC-bgset {
+        margin: auto;
     }
 }
 /* セクションD コンテンツD */
@@ -530,10 +548,11 @@ body {
 .conD .service-text {
     margin-right: 25px;
     margin-left: 25px;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
 .conD .service-text p {
-    width: 490px;
     margin: auto;
 }
 
@@ -554,6 +573,7 @@ body {
 .conD .list-items ul {
     list-style: none;
     margin-top: 30px;
+    margin-bottom: 40px;
     padding: 0;
 }
 
@@ -561,7 +581,6 @@ body {
     margin-bottom: 60px;
     background-color: white;
     padding: 20px 0 40px;
-    width: 490px;
     border: 1px solid rgb(239, 240, 241);
 }
 
@@ -620,10 +639,23 @@ body {
 
     .conD .list-items li {
         margin: 0 0 30px;
+        width: 100%;
+        max-width: 490px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .conD .list-items ul {
+        margin-left: 25px;
+        margin-right: 25px;
     }
 
     .section-num span::before {
         width: 24px;
+    }
+
+    .conD .service-text {
+        max-width: 490px;
     }
 }
 
@@ -759,7 +791,8 @@ body {
 }
 
 .header .head-container {
-    width: 900px;
+    max-width: 900px;
+    width: 100%;
     margin: auto;
     position: absolute;
     top: 20px;
