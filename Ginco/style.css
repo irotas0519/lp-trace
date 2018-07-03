@@ -96,7 +96,7 @@ body {
 /* コンテンツA */
 
 .conA {
-    background-image: url("imggnc/decoration_top.png");
+    background-image: url("img/decoration_top.png");
     background-size: contain;
     background-repeat: no-repeat;
     padding-top: 125px;
