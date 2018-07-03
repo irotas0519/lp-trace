@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+/* eos notification */
+#eos_notification {
+  padding: 18px 0;
+  box-shadow: 0px 6px 32px rgba(0, 0, 0, .3);
+  background: -moz-linear-gradient(45deg, rgba(241,202,127,1) 0%, rgba(252,122,66,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(241,202,127,1)), color-stop(100%, rgba(252,122,66,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(45deg, rgba(241,202,127,1) 0%, rgba(252,122,66,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(45deg, rgba(241,202,127,1) 0%, rgba(252,122,66,1) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(45deg, rgba(241,202,127,1) 0%, rgba(252,122,66,1) 100%); /* ie10+ */
+  background: linear-gradient(45deg, rgba(241,202,127,1) 0%, rgba(252,122,66,1) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FC7A42', endColorstr='#f1ca7f',GradientType=1 ); /* ie6-9 */
+}
+#eos_notification .wrapper_title_eos_notification {
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#eos_notification .icon_eos_notification {
+  width: 20px;
+}
+#eos_notification .icon_eos_notification img {
+  width: 100%;
+  height: auto;
+}
+#eos_notification .title_eos_notification {
+  color: #fff;
+  line-height: 15px;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+  margin-top: 2px;
+  margin-left: 6px;
+}
+#eos_notification .description_eos_notifcation {
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  margin-top: 6px;
+  text-align: center;
+}
+#eos_notification .description_eos_notifcation > strong {
+  color: #fff;
+  letter-spacing: 0.2px;
+  font-size: 13px;
+  text-decoration: underline;
+}
+#eos_notification .button_eos_notification {
+  width: 160px;
+  padding: 12px 0;
+  line-height: 12px;
+  letter-spacing: 0.2px;
+  font-size: 12px;
+  box-shadow: 0px 8px 18px rgba(179, 94, 12, .3);
+  background: #fff;
+  color: #fba34c;
+  text-align: center;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 12px;
+}
+.font_family_en {
+  font-family: Avenir, "Helvetica Neue", Helvetica, Arial, Roboto, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !important;
+}
+.font_family_jp {
+  font-family: 'Noto Sans', sans-serif !important;
+}
+
+/*---------------------------------------------------------------*\
+$1024px
+\*---------------------------------------------------------------*/
+
+@media screen and (max-width: 1024px) {
+
+  /* eos notification */
+  #eos_notification .description_eos_notifcation {
+    font-weight: 600;
+  }
+  #eos_notification .button_eos_notification {
+    font-weight: 600;
+  }
+}
+
+/*---------------------------------------------------------------*\
+	$600px
+\*---------------------------------------------------------------*/
+
+@media screen and (max-width: 600px) {
+
+  /* eos notifcation */
+  #eos_notification .description_eos_notifcation {
+    width: 85%;
+    margin: 5px auto 0;
+    text-align: justify;
+  }
+}
+
+/*---------------------------------------------------------------*\
+	$320px
+\*---------------------------------------------------------------*/
+
+@media screen and (max-width: 320px) {
+
+  /* eos notification */
+  #eos_notification .title_eos_notification {
+    font-size: 14px;
+  }
+  #eos_notification .icon_eos_notification {
+    width: 18px;
+  }
+  #eos_notification .description_eos_notifcation > strong {
+    font-size: 12px;
+  }
+  #eos_notification {
+    padding: 14px 0;
+  }
+}

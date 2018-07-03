@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/*---------------------------------------------------------------*\
+	$common
+\*---------------------------------------------------------------*/
+
+#error {
+    width: 100%;
+    padding: 280px 0px;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 64%;
+}
+
+#error .title_error {
+    text-align: center;
+    font-size: 120px;
+}
+
+.subtitle_error {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/*---------------------------------------------------------------*\
+	$1080px
+\*---------------------------------------------------------------*/
+
+@media screen and (max-width: 1080px) {}
+
+
+/*---------------------------------------------------------------*\
+	$768px
+\*---------------------------------------------------------------*/
+
+@media screen and (max-width: 768px) {}
+
+
+/*---------------------------------------------------------------*\
+	$480px
+\*---------------------------------------------------------------*/
+
+@media screen and (max-width: 480px) {}
+
+
+/*---------------------------------------------------------------*\
+	$320px
+\*---------------------------------------------------------------*/
+
+@media screen and (max-width: 320px) {}

@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/* 基本 */
+
+a {
+    text-decoration: none;
+}
+
+root {
+    --question-section-color: rgb(230, 247, 252);
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.max-container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ヘッダー */
+
+.header {
+    padding-top: 45px;
+    position: fixed;
+    top: 0;
+    background: rgba(255,0,0,0);
+    width: 100%;
+}
+
+.header .img-balancing {
+    width: 110px;
+    height: 32px;
+}
+
+.header img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.header-links {
+    width: 425px;
+    height: 22px;
+}
+
+.header-links img {
+    width: 8px;
+    height: 8px;
+}
+
+.header-sns {
+    width: 61.25px;
+    height: 32px;
+}
+
+.header i {
+    color: #2f02d8;
+    font-size: 16px;
+}
+
+.header a {
+    font-size: 13px;
+    color: black;
+    font-weight: bold;
+}
+
+/* コンテンツA */
+
+.conA h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.conA h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.conA img {
+    position: absolute;
+}
