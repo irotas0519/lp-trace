@@ -25,7 +25,7 @@ body {
 }
 
 .max-container {
-    max-width: 1300px;
+    max-width: 1100px;
     margin: auto;
 }
 
@@ -33,6 +33,12 @@ body {
     .max-container {
         max-width: 900px;
         margin: auto;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .max-container {
+        max-width: 87% !important;
     }
 }
 
@@ -121,6 +127,20 @@ body {
     z-index: 100;
 }
 
+@media screen and (max-width: 1500px) {
+    .header .max-container {
+        max-width: 1100px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header .max-container {
+        max-width: 900px;
+        margin: auto;
+    }
+}
+
 .header .img-balancing {
     width: 110px;
     height: 32px;
@@ -191,6 +211,89 @@ body {
     top: 0;
 }
 
+.conA .img-balancing2 {
+    position: absolute;
+    top: -150px;
+    right: 0;
+    width: 90%;
+}
+
+@media screen and (max-width: 1500px) {
+    .conA h1 {
+        font-size: 52px;
+        line-height: 72px;
+        padding-top: 250px;
+
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .conA h1 {
+        font-size: 45px;
+        line-height: 65px;
+        padding-top: 200px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .conA h1 {
+        font-size: 40px;
+        line-height: 60px;
+        padding-top: 150px;
+    }
+}
+@media screen and (max-width: 960px) {
+    .conA h1 {
+        font-size: 5.5vw;
+        line-height: 7.5vw;
+        padding-top: 100px;
+    }
+
+    .conA .max-container {
+        max-width: 87% !important;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .conA h2 {
+        font-size: 26px;
+        line-height: 26px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .conA h2 {
+        font-size: 22px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .conA h2 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .conA img {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .conA .img-balancing {
+        top: 400px;
+        display: none;
+    }
+}
+
+@media not screen and (max-width: 960px) {
+    .conA .img-balancing2 {
+        display: none;
+    }
+}
+
 /* コンテンツB */
 
 .conB {
@@ -200,6 +303,7 @@ body {
 
 .conB .max-container {
     max-width: 800px;
+    margin-top: 400px;
 }
 
 .conB .img-balancing {
@@ -221,6 +325,26 @@ body {
     align-items: flex-start;
 }
 
+
+@media screen and (max-width: 1200px) {
+    .conB .max-container {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .conB .max-container {
+        margin-top: -100px;
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    .conB .max-container {
+        margin-top: 470px;
+    }
+}
+
 /* コンテンツC */
 
 .conC .coloring {
@@ -233,6 +357,20 @@ body {
 
 .conC img {
     width: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+    .conC h1 .conD h1 .conE h1 {
+        font-size: 40px !important;
+    }
+
+    .conC h2 .conD h2 .conE h2 {
+        font-size: 18px !important;
+    }
+
+    .conC p .conD p .conE p {
+        font-size: 12px !important;
+    }
 }
 
 /* コンテンツD */
@@ -361,8 +499,61 @@ body {
 .conG .road-ul {
     position: absolute;
     top: -40px;
-    left: 210px;
+    left: 31%;
 }
+
+@media screen and (max-width: 1800px) {
+    .conG .road-ul {
+        left: 28%;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .conG .road-ul {
+        left: 24%;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .conG .road-ul {
+        left: 23%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .conG .road-ul {
+        left: 22%;
+    }
+}
+
+
+@media screen and (max-width: 1300px) {
+    .conG .road-ul {
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .conG .road-ul {
+        left: 17%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .conG .road-ul {
+        left: 15%;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .conG .road-ul {
+        left: 13%;
+    }
+}
+
+
+
 
 .conG .road-li {
     background-color: white;
@@ -381,9 +572,6 @@ body {
 .conG .bg-image {
     background-image: linear-gradient(45deg, rgb(47, 2, 216) 0%, rgb(29, 119, 242) 100%);
     color: white !important;
-}
-
-.conG .road-li span {
 }
 
 /* コンテンツH */
@@ -529,11 +717,17 @@ body {
 
 .conJ .container {
     box-shadow: 0px 0px 50px rgba(0, 0, 0, .2);
-    width: 1028px;
+    width: 1080px;
     height: 472px;
     margin: auto;
     padding: 60px 120px;
     position: relative;
+}
+
+@media not screen and (max-width: 1400px) {
+    .conJ .container {
+        width: 1100px;
+    }
 }
 
 .conJ .deco-top-balancing {
@@ -649,6 +843,7 @@ body {
     margin-bottom: 70px;
     letter-spacing: 1px;
     border-radius: 10px;
+    max-width: 1100px;
 }
 
 .conL .blue-black-round-box {
