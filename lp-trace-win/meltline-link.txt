@@ -1,1 +1,1 @@
-<link rel="stylesheet" href="https://cdn.rawgit.com/phi-jp/meltline/v0.1.8/meltline.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/phi-jp/meltline@v0.1.8/meltline.css" />
